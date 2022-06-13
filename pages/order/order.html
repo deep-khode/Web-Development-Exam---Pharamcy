@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <div style="display: flex; align-items: center;">
+                <div class="d-flex">
+                    <img src="../../Assets/logo.png" alt="Logo" width="22" height="26">
+                    <h1 class="header-log">Kafene</h1>
+                </div>
+                <div class="header-item">
+                    <li> <a href="./order.html" class="header-active">Orders</a></li>
+                    <li> <a href="../products/product.html">Products</a></li>
+                    <li> <a href="../users/users.html">Users</a></li>
+                </div>
+            </div>
+
+            <div class="logout">
+                <button id="logout" type="button" class="">Logout</button>
+            </div>
+        </header>
+        <h1 style="margin-left: 7rem">Orders</h1>
+        <section id="order-section" class="section">
+            <div id="filter">
+                <h3>Filters</h3>
+                <p>Count: <span id="count-of-order">100</span></p>
+                <input type="checkbox" name="new" id="new" value="New" class="checkbox" checked /> <label for="new">New</label><br /><br />
+                <input type="checkbox" name="packed" id="packed" value="Packed" class="checkbox" checked /> <label for="packed">Packed</label><br /><br />
+                <input type="checkbox" name="intransit" id="intransit" value="InTransit" class="checkbox" checked /> <label for="intransit">InTransit</label><br /><br />
+                <input type="checkbox" name="delivery" id="delivery" value="Delivered" class="checkbox" checked /> <label for="delivery">Delivery</label><br /><br />
+            </div>
+            <div id="order">
+                <table id="order-table" class="table">
+                    <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> Customer </th>
+                            <th> Date </th>
+                            <th> Amount </th>
+                            <th> Status </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="./order.js" type="text/javascript"></script>
+</body>
+</html>

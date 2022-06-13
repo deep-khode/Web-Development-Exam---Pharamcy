@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <div style="display: flex; align-items: center;">
+                <div class="d-flex">
+                    <img src="../../Assets/logo.png" alt="Logo" width="22" height="26">
+                    <h1 class="header-log">Kafene</h1>
+                </div>
+                <div class="header-item">
+                    <li> <a href="../order/order.html">Orders</a></li>
+                    <li> <a href="../products/product.html">Products</a></li>
+                    <li> <a href="./users.html" class="header-active">Users</a></li>
+                </div>
+            </div>
+
+            <div class="logout">
+                <button id="logout" type="button" class="">Logout</button>
+            </div>
+        </header>
+        <h1 style="margin-left: 7rem">Users</h1>
+        <section id="user-section" class="section">
+            <div id="filter">
+               <input type="search" name="fullname" id="fullname" class="search-style" placeholder="Search by Name"/>
+                <button type="button" id="reset" class="button-style">Reset</button>
+            </div>
+            <div id="user">
+                <table id="user-table" class="table">
+                    <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> User Avatar </th>
+                            <th> Full Name </th>
+                            <th> DoB </th>
+                            <th> Gender </th>
+                            <th> Current Location </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="./users.js" type="text/javascript"></script>
+</body>
+</html>
