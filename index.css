@@ -65,6 +65,9 @@ header{
     max-height: 4rem;
     box-shadow: 1px 0px 5px grey;
     padding: 0rem 3rem;
+    position: sticky;
+    top: 0;
+    background: #fff;
 }
 
 li a{
